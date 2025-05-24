@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.puzzle-container {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 0px;
+  width: 306px;
+  margin: 0 auto;
+}
+
+.puzzle-piece {
+  width: 100px;
+  height: 100px;
+  background-image: url('assets/img/game.jpeg');
+  background-size: 300px 300px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+/* game find words */
+#grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2px;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 100%;
+  user-select: none;
+  padding: 0 10px;
+}
+
+.cell {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  font-size: 4vw;
+  border: 1px solid #aaa;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cell.selected {
+  background-color: lightblue;
+}
+
+.cell.found {
+  background-color: lightgreen;
+}
+
+/* Media query untuk tablet/desktop */
+@media (min-width: 600px) {
+  .cell {
+    font-size: 18px;
+  }
+}

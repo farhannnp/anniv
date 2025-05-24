@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bebe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-[#BBE9FF] min-h-screen flex justify-center items-center p-4">
+  <div class="max-w-screen-md w-full bg-blue-200 rounded-2xl shadow-lg p-6 space-y-6 relative">
+
+    <!-- Header -->
+    <div class="flex justify-center">
+  <div class="text-center bg-[#FFF9BF] border border-yellow-300 px-4 py-2 w-2/4 rounded-lg text-gray-900 font-semibold leading-tight">
+    <p>📌 NOTICE</p>
+    <p>To: the most beautiful GF ♡</p>
+    <p>From: your loving BF ♡</p>
+  </div>
+</div>
+
+    <!-- Step 1 -->
+    <div>
+      <p class="text-sm font-medium text-center">01 — Start here!</p>
+        <div class="flex justify-center">
+          <a href="letter.html">
+        <button class="text-xs mt-2 bg-white border border-gray-300 rounded-full px-4 py-1 hover:bg-[#FFF9BF]">
+            ♡ Read me ♡
+        </button>
+          </a>
+        </div>
+    </div>
+
+    <!-- Foto Pacar -->
+    <div class="flex justify-center">
+      <img src="https://cheesysi.netlify.app/img/5.jpeg" alt="GF" class="rounded-xl w-[250px] h-[300px] object-cover" />
+    </div>
+
+    <!-- Music Player Dummy -->
+  <div class="flex justify-center items-center">
+  <div class="bg-[#FFF9BF] text-gray-900 rounded-xl flex items-center px-4 py-3 space-x-4 shadow w-11/12 max-w-md">
+    <img src="https://images.genius.com/033dbfd88a9765ebe07aad58614006ae.600x600x1.jpg" 
+         alt="Lemonade" 
+         class="w-12 h-12 rounded-full object-cover" />
+    
+    <div class="flex-1">
+      <p class="font-semibold text-sm">Lemonade - Jeremy Passion</p>
+      <p class="text-xs">Acoustic / R&B</p>
+
+      <div class="h-1 bg-gray-400 rounded-full mt-1">
+        <div id="progress" class="h-1 bg-white w-0 rounded-full"></div>
+      </div>
+
+      <div class="flex justify-between text-xs text-gray-500 mt-1">
+        <span id="currentTime">0:00</span>
+        <span id="duration">0:00</span>
+      </div>
+    </div>
+
+    <button id="playBtn"><i class="fas fa-play text-lg"></i></button>
+    <button id="pauseBtn" class="hidden"><i class="fas fa-pause text-lg"></i></button>
+    
+    <audio id="audio" src="assets/Lemonade (Ukulele Version).mp3"></audio>
+  </div>
+</div>
+
+
+    <!-- Section: Things I love about you -->
+<div class="flex flex-col items-center mt-10">
+  <div class="text-sm border border-gray-300 rounded-full px-4 py-1 bg-white mb-6">
+    02 — Things I love about you ♡
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl px-4">
+    <div class="bg-[#FFF9BF] rounded-lg shadow p-4 text-sm flex justify-center items-center text-center">🪐 You’re so kind. To everything and everyone.</div>
+    <div class="bg-[#FFF9BF] rounded-lg shadow p-4 text-sm flex justify-center items-center text-center">🪐 You know how to comfort me</div>
+    <div class="bg-[#FFF9BF] rounded-lg shadow p-4 text-sm flex justify-center items-center text-center">🪐 You are cute</div>
+    <div class="bg-[#FFF9BF] rounded-lg shadow p-4 text-sm flex justify-center items-center text-center">🪐 You have the cutest smile!</div>
+    <div class="bg-[#FFF9BF] rounded-lg shadow p-4 text-sm flex justify-center items-center text-center">🪐 You make every day a little brighter. I don't know how you do it.</div>
+    <div class="bg-[#FFF9BF] rounded-lg shadow p-4 text-sm flex justify-center items-center text-center">🪐 You are so smart.</div>
+    <div class="bg-[#FFF9BF] rounded-lg shadow p-4 text-sm flex justify-center items-center text-center">🪐 You support me in everything I do.</div>
+    <div class="bg-[#FFF9BF] rounded-lg shadow p-4 text-sm flex justify-center items-center text-center">🪐 You make the world a better place</div>
+    <div class="bg-[#FFF9BF] rounded-lg shadow p-4 text-sm flex justify-center items-center text-center">🪐 You are so patient. I don’t know how you do it sometimes</div>
+    <div class="bg-[#FFF9BF] rounded-lg shadow p-4 text-sm flex justify-center items-center text-center">🪐 You bring positive energy to me.</div>
+    <div class="bg-[#FFF9BF] rounded-lg shadow p-4 text-sm flex justify-center items-center text-center">🪐 You’re so, so beautiful</div>
+    <div class="bg-[#FFF9BF] rounded-lg shadow p-4 text-sm flex justify-center items-center text-center">🪐 Your sense of humor always makes me smile</div>
+  </div>
+</div>
+
+<!-- Section: Favorite moments together -->
+<div class="flex flex-col items-center mt-12">
+  <div class="text-sm border border-gray-300 rounded-full px-4 py-1 bg-white mb-6">
+    04 — Random photos
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 max-w-4xl px-4">
+    <img src="assets/img/1.jpeg" alt="moment 1" class="rounded-lg shadow-md w-full h-auto object-cover">
+    <img src="assets/img/2.jpeg" alt="moment 2" class="rounded-lg shadow-md w-full h-auto object-cover">
+    <img src="assets/img/3.jpeg" alt="moment 3" class="rounded-lg shadow-md w-full h-auto object-cover">
+    <img src="assets/img/4.jpeg" alt="moment 3" class="rounded-lg shadow-md w-full h-auto object-cover">
+    <img src="assets/img/5.jpeg" alt="moment 3" class="rounded-lg shadow-md w-full h-auto object-cover">
+    <img src="assets/img/6.jpeg" alt="moment 3" class="rounded-lg shadow-md w-full h-auto object-cover">
+    <img src="assets/img/7.jpeg" alt="moment 3" class="rounded-lg shadow-md w-full h-auto object-cover">
+    <img src="assets/img/8.jpeg" alt="moment 3" class="rounded-lg shadow-md w-full h-auto object-cover">
+    <img src="assets/img/9.jpeg" alt="moment 3" class="rounded-lg shadow-md w-full h-auto object-cover">
+  </div>
+</div>
+
+<div class="justify-center items-center">
+  <div class="text-sm border border-gray-300 rounded-full px-4 py-1 bg-white mb-6 inline-block">
+    03 — Games
+  </div>
+    <h1>Puzzle</h1>
+    <div class="puzzle-container" id="puzzle"></div>
+  <button onclick="shuffle()" class="bg-yellow-200 text-black px-5 py-2 rounded-full hover:bg-yellow-300 transition mt-3">Acak Ulang</button>
+
+  <script src="script.js"></script>
+</div>
+
+<div>
+   <h2>🔍 Find Words: you, happy, love, Anniversary, first, bebe</h2>
+  <div id="grid"></div>
+  <p id="result"></p>
+
+  <script src="find.js"></script>
+</div>
+
+<div class="flex justify-end mt-6">
+  <a href="end.html">
+    <button class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition">
+      Next
+    </button>
+  </a>
+</div>
+
+  </div>
+
+
+  <script>
+    const playBtn = document.getElementById('playBtn');
+    const pauseBtn = document.getElementById('pauseBtn');
+    const audio = document.getElementById('audio');
+    const currentTimeEl = document.getElementById('currentTime');
+    const durationEl = document.getElementById('duration');
+    const progress = document.getElementById('progress');
+
+    // Format detik ke menit:detik
+    function formatTime(seconds) {
+      const min = Math.floor(seconds / 60);
+      const sec = Math.floor(seconds % 60);
+      return `${min}:${sec < 10 ? '0' : ''}${sec}`;
+    }
+
+    playBtn.addEventListener('click', () => {
+      audio.play();
+      playBtn.classList.add('hidden');
+      pauseBtn.classList.remove('hidden');
+    });
+
+    pauseBtn.addEventListener('click', () => {
+      audio.pause();
+      pauseBtn.classList.add('hidden');
+      playBtn.classList.remove('hidden');
+    });
+
+    audio.addEventListener('loadedmetadata', () => {
+      durationEl.textContent = formatTime(audio.duration);
+    });
+
+    audio.addEventListener('timeupdate', () => {
+      currentTimeEl.textContent = formatTime(audio.currentTime);
+      const percent = (audio.currentTime / audio.duration) * 100;
+      progress.style.width = percent + '%';
+    });
+  </script>
+</body>
+</html>

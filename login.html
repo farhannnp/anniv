@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Enter Passcode</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#BBE9FF] min-h-screen flex items-center justify-center">
+
+  <div class="bg-[#FFF9BF] border-4 border-[#51829B] rounded-xl p-6 flex flex-col md:flex-row items-center gap-6 max-w-xl w-full">
+    
+    <!-- Gambar -->
+    <div class="bg-white border border-dashed border-gray-400 p-4 rounded-lg">
+      <img src="https://i.pinimg.com/736x/d5/1b/25/d51b25c0045ba7dc84426d1192edb7e6.jpg" alt="Cute Couple" class="w-64 h-64 object-contain">
+    </div>
+
+    <!-- Keypad -->
+    <div class="flex flex-col items-center">
+      <h2 class="text-lg font-bold text-[#51829B] mb-4">enter passcode</h2>
+
+      <!-- Display PIN -->
+      <input id="pinInput" type="password" readonly class="mb-3 w-40 text-center text-xl font-bold bg-white border border-purple-300 rounded-lg py-2 px-3" placeholder="******">
+
+      <div class="grid grid-cols-3 gap-2">
+        <button class="btn border-2 border-[#51829B] px-6 py-4 rounded-2xl font-medium" onclick="appendNumber('1')">1</button>
+        <button class="btn border-2 border-[#51829B] px-6 py-4 rounded-2xl font-medium" onclick="appendNumber('2')">2</button>
+        <button class="btn border-2 border-[#51829B] px-6 py-4 rounded-2xl font-medium" onclick="appendNumber('3')">3</button>
+        <button class="btn border-2 border-[#51829B] px-6 py-4 rounded-2xl font-medium" onclick="appendNumber('4')">4</button>
+        <button class="btn border-2 border-[#51829B] px-6 py-4 rounded-2xl font-medium" onclick="appendNumber('5')">5</button>
+        <button class="btn border-2 border-[#51829B] px-6 py-4 rounded-2xl font-medium" onclick="appendNumber('6')">6</button>
+        <button class="btn border-2 border-[#51829B] px-6 py-4 rounded-2xl font-medium" onclick="appendNumber('7')">7</button>
+        <button class="btn border-2 border-[#51829B] px-6 py-4 rounded-2xl font-medium" onclick="appendNumber('8')">8</button>
+        <button class="btn border-2 border-[#51829B] px-6 py-4 rounded-2xl font-medium" onclick="appendNumber('9')">9</button>
+        <button class="btn border-2 border-[#51829B] px-6 py-4 rounded-2xl font-medium" onclick="appendNumber('.')">.</button>
+        <button class="btn border-2 border-[#51829B] px-6 py-4 rounded-2xl font-medium" onclick="appendNumber('0')">0</button>
+        <button class="btn border-2 border-[#51829B] px-6 py-4 rounded-2xl font-medium" onclick="checkPin()">/</button>
+      </div>
+
+      <p id="errorMsg" class="mt-2 text-red-600 text-sm hidden">PIN salah!</p>
+    </div>
+  </div>
+
+  <style>
+    .btn {
+      @apply w-16 h-16 bg-white border border-purple-500 rounded-lg text-purple-800 font-bold text-xl hover:bg-purple-100;
+    }
+  </style>
+
+  <script>
+    const pinInput = document.getElementById("pinInput");
+    const errorMsg = document.getElementById("errorMsg");
+
+    function appendNumber(num) {
+      if (pinInput.value.length < 6) {
+        pinInput.value += num;
+        errorMsg.classList.add("hidden");
+      }
+    }
+
+    function clearPin() {
+      pinInput.value = "";
+      errorMsg.classList.add("hidden");
+    }
+
+    function checkPin() {
+      const correctPin = "250524";
+      if (pinInput.value === correctPin) {
+        window.location.href = "main.html"; // ganti dengan halaman utama kamu
+      } else {
+        errorMsg.classList.remove("hidden");
+        pinInput.value = "";
+      }
+    }
+  </script>
+
+</body>
+</html>

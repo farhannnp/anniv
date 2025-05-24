@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>bebe</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#BBE9FF] flex items-center justify-center min-h-screen p-4">
+
+  <!-- Card -->
+  <div class="relative bg-[#f6f9ad] border-4 border-[#51829B] rounded-xl p-6 flex flex-col md:flex-row items-center gap-6 max-w-xl w-full shadow-lg">
+
+    <!-- Left red heart icon -->
+    <div class="hidden md:block absolute -top-5 left-6">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="red" viewBox="0 0 24 24" class="w-10 h-10">
+        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 
+          5.42 4.42 3 7.5 3c1.74 0 3.41 
+          0.81 4.5 2.09C13.09 3.81 14.76 
+          3 16.5 3 19.58 3 22 5.42 22 
+          8.5c0 3.78-3.4 6.86-8.55 
+          11.54L12 21.35z"/>
+      </svg>
+    </div>
+
+    <!-- Profile Picture -->
+    <img
+      src="https://i.pinimg.com/736x/9c/1c/11/9c1c11493df71e86e70df37657d6394c.jpg"
+      alt="Couple"
+      class="rounded-full w-24 h-24 object-cover border-2 border-white shadow-md"
+    />
+
+    <!-- Question box -->
+    <div class="flex-1 relative w-full">
+      <div
+        class="flex items-center bg-white px-4 py-2 rounded-full border border-purple-400 shadow-sm"
+      >
+        <input
+          type="text"
+          readonly
+          value="How long have we been together?"
+          class="bg-transparent outline-none flex-1 text-[#51829B] font-semibold"
+        />
+        <!-- Button -->
+        <button
+          onclick="window.location.href='halaman2.html'"
+          class="ml-2 text-[#51829B] hover:text-purple-800 transition"
+          aria-label="Go to next page"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21 21l-4.35-4.35M17 10a7 7 0 11-14 0 7 7 0 0114 0z"
+            ></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Right red heart icon -->
+    <div class="hidden md:block absolute -top-5 right-6">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="red" viewBox="0 0 24 24" class="w-10 h-10">
+        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 
+          5.42 4.42 3 7.5 3c1.74 0 3.41 
+          0.81 4.5 2.09C13.09 3.81 14.76 
+          3 16.5 3 19.58 3 22 5.42 22 
+          8.5c0 3.78-3.4 6.86-8.55 
+          11.54L12 21.35z"/>
+      </svg>
+    </div>
+    
+  </div>
+
+</body>
+</html>
